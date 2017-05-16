@@ -41,9 +41,9 @@ function Statement(){
     image(statementImage, 0, 0);
     textAlign(LEFT);
     textStyle(NORMAL);
-    text(GenericStatement, 135, 365, 700, 480);
+    text(GenericStatement, 150, 365, 700, 480);
     textStyle(BOLD);
-    text(SpinnedStatement, 135, 635, 700, 500);
+    text(SpinnedStatement, 150, 635, 700, 500);
 
   //Debug Log Block
   console.log("-------------------------------------------------------------------------------------");
