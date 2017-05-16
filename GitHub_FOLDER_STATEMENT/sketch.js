@@ -23,11 +23,10 @@ function setup() {
     background(255);
 
     //This variable is defined from the date of today.
-    dateCheck = 24 ///day();
+    dateCheck = day();
     
     //This specifies how often there will be gathered a new API and when to take a picture of the raw data.
     setInterval(apiSwitch, 10000);
-    setTimeout(canvasGrab, 30000);
     
     fill(80);
     textSize(22);
@@ -53,10 +52,4 @@ function Statement(){
   console.log("Spin: " + SpinnedStatement);
   console.log("RåData: " + RawDataType);
   console.log("-------------------------------------------------------------------------------------");
-}
-
-//This functions grabs a picture of the canvas while it only displays the rawdata. Afterwards the canvas gets enlarged to display the whole image.
-function canvasGrab(){
-  saveCanvas('RawStatement.png', 'png');
-  console.log("Picture has been grabbed!");
 }
